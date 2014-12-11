@@ -150,7 +150,7 @@ public class GameController : MonoBehaviour {
 				GUI.color = Color.cyan;
 				if (GUI.Button(new Rect(600, 400, 200, 50), "Twitter", style))
 				{
-				//	Application.OpenURL("http://twitter.com/share?url=&text=");
+					Application.OpenURL(string.Format("http://twitter.com/share?url=http://pronama.github.io/mascot-apps-contest/2014/works.html?id=158&text=%23マスコットアプリ文化祭 YOU CAN FLY!で遊びました。（記録：{0:F2}m) ", score.GetComponent<ScoreGUI>().value));
 				}
 				GUI.color = c;
 			}
